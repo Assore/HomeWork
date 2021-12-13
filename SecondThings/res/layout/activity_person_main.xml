@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.secondthings.PersonMainActivity"
+    android:background="@drawable/beijingmain" >
+
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/message_nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="welcome to the SecondThings" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="58dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:src="@drawable/pikapika_p" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" 
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/p_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" >
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年级" />
+
+            <TextView
+                android:id="@+id/p_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" >
+
+            <TextView
+                android:id="@+id/acad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学院" />
+
+            <TextView
+                android:id="@+id/p_acad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业" />
+
+            <TextView
+                android:id="@+id/p_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/muBtn_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="信息中心" />
+
+    <Button
+        android:id="@+id/muBtn_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/muBtn_form"
+        android:layout_alignBottom="@+id/muBtn_form"
+        android:layout_toRightOf="@+id/muBtn_form"
+        android:text="个人资料" />
+
+    <Button
+        android:id="@+id/muBtn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/muBtn_person"
+        android:layout_alignBottom="@+id/muBtn_person"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:text="交易系统" />
+
+</RelativeLayout>

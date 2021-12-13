@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="10dp"
+    
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="@drawable/xiaobeijing" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/change_itemNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="接收方姓名"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/change_itemMessageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:maxLines="1"
+                android:text="信息"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/change_itemReadTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:text="待查看" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/beijingmain"
+    tools:context="com.example.secondthings.ChangeMainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/change_addIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <Button
+            android:id="@+id/change_sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="已发送" />
+
+        <Button
+            android:id="@+id/change_reciveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收信箱" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/change_List"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_weight="0.43"
+        android:divider="#00000000"
+        android:dividerHeight="14dp" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/change_forumBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息中心" />
+
+        <Button
+            android:id="@+id/change_personBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人资料" />
+
+        <Button
+            android:id="@+id/change_changeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易系统" />
+
+    </LinearLayout>
+
+</LinearLayout>
